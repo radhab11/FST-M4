@@ -1,0 +1,157 @@
+Task Name: Mapping2
+Agent Group Id: 025000000000002
+Agent Group Name: Informatica Cloud Hosted Agent
+Agent Id: 00800000000000E
+08/31/2021 04:42:51 **** Importing Connection: Conn_01ASGZ0B000000000002 ...
+08/31/2021 04:42:51 **** Importing Source Definition: Phones ...
+08/31/2021 04:42:51 **** Importing Target Definition: Midrange_Phones ...
+08/31/2021 04:42:51 **** Importing SessionConfig: default_session_config ...
+    <Warning> :  The Error Log DB Connection value should have Relational: as the prefix.
+    <Warning> :  Invalid value  for attribute Error Log DB Connection. Will use the default value 
+    Validating Source Definition  Phones...
+    Validating Target Definition  Midrange_Phones...
+08/31/2021 04:42:51 **** Importing Mapping: Mapping0 ...
+    <Warning> :  transformation: Source - Invalid value  for attribute Output is repeatable. Will use the default value Never    [transformation< Source > ] 
+Validating transformations of mapping Mapping0...
+Validating mapping variable(s).
+08/31/2021 04:42:51 **** Importing Workflow: wf_mtt_01ASGZ0Z000000000003 ...
+    <Warning> :  The value entered is not a valid integer.
+    <Warning> :  Invalid value NO for attribute Fail task after wait time. Will use the default value 
+Successfully extracted session instance [s_mtt_01ASGZ0Z000000000003].  Starting repository sequence id is [1950639919]
+DIRECTOR> VAR_27085 [2021-08-31 04:42:51.443] Parameter file [/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/01ASGZ0E00000000005O/01ASGZ/parameters/s_mtt_01ASGZ0Z000000000003.param] is opened for [session [wf_mtt_01ASGZ0Z000000000003.s_mtt_01ASGZ0Z000000000003]].
+DIRECTOR> VAR_27062 [2021-08-31 04:42:51.443] Warning! Cannot find section for worklet [wf_mtt_01ASGZ0Z000000000003] and folder [] in parameter file [/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/01ASGZ0E00000000005O/01ASGZ/parameters/s_mtt_01ASGZ0Z000000000003.param].
+DIRECTOR> VAR_27028 [2021-08-31 04:42:51.443] Use override value [s_mtt_01ASGZ0Z000000000003_2_error.csv] for user-defined workflow/worklet variable:[$ErrorFileName].
+DIRECTOR> VAR_27028 [2021-08-31 04:42:51.444] Use override value [2021-08-31] for user-defined workflow/worklet variable:[$LastRunDate].
+DIRECTOR> VAR_27028 [2021-08-31 04:42:51.444] Use override value [2021-08-31 04:34:17] for user-defined workflow/worklet variable:[$LastRunTime].
+DIRECTOR> VAR_27028 [2021-08-31 04:42:51.444] Use override value [s_mtt_01ASGZ0Z000000000003_8_31_2021_04_42_success.csv] for user-defined workflow/worklet variable:[$SuccessFileName].
+DIRECTOR> TM_6014 [2021-08-31 04:42:51.444] Initializing session [s_mtt_01ASGZ0Z000000000003] at [Tue Aug 31 04:42:51 2021].
+DIRECTOR> TM_6683 [2021-08-31 04:42:51.444] Repository Name: [XMLRepository]
+DIRECTOR> TM_6684 [2021-08-31 04:42:51.444] Server Name: [rDTM]
+DIRECTOR> TM_6686 [2021-08-31 04:42:51.444] Folder: []
+DIRECTOR> TM_6685 [2021-08-31 04:42:51.444] Workflow: [wf_mtt_01ASGZ0Z000000000003] Run Instance Name: [] Run Id: [0]
+DIRECTOR> TM_6101 [2021-08-31 04:42:51.444] Mapping name: Mapping0.
+DIRECTOR> TM_6964 [2021-08-31 04:42:51.444] Date format for the Session is [MM/DD/YYYY HH24:MI:SS.US]
+DIRECTOR> TM_6703 [2021-08-31 04:42:51.448] Session [s_mtt_01ASGZ0Z000000000003] is run by 64-bit Integration Service  [], version [9.1.0 HotFix1], build [0627].
+MANAGER> PETL_24058 [2021-08-31 04:42:51.523] Running Partition Group [1].
+MANAGER> PETL_24000 [2021-08-31 04:42:51.523] Parallel Pipeline Engine initializing.
+MANAGER> PETL_24001 [2021-08-31 04:42:51.524] Parallel Pipeline Engine running.
+MANAGER> PETL_24003 [2021-08-31 04:42:51.524] Initializing session run.
+MAPPING> CMN_1569 [2021-08-31 04:42:51.527] Server Mode: [UNICODE]
+MAPPING> CMN_1570 [2021-08-31 04:42:51.527] Server Code page: [ISO 8859-1 Western European]
+MAPPING> TM_6151 [2021-08-31 04:42:51.527] The session sort order is [Binary].
+MAPPING> TM_6185 [2021-08-31 04:42:51.527] Warning. Code page validation is disabled in this session.
+MAPPING> CMN_65083 [2021-08-31 04:42:51.527] Current Timezone:[UTC +0:0]
+MAPPING> CMN_65085 [2021-08-31 04:42:51.527] Current Process ID:[5672]
+MAPPING> TM_6155 [2021-08-31 04:42:51.527] Using HIGH precision processing.
+MAPPING> TM_6180 [2021-08-31 04:42:51.527] Deadlock retry logic will not be implemented.
+MAPPING> TM_6187 [2021-08-31 04:42:51.527] Session target-based commit interval is [10000].
+MAPPING> TM_6307 [2021-08-31 04:42:51.527] DTM error log disabled. 
+MAPPING> TE_7022 [2021-08-31 04:42:51.528] TShmWriter: Initialized
+MAPPING> TM_6007 [2021-08-31 04:42:51.529] DTM initialized successfully for session [s_mtt_01ASGZ0Z000000000003]
+DIRECTOR> PETL_24033 [2021-08-31 04:42:51.554] All DTM Connection Info: [<NONE>].
+MANAGER> PETL_24004 [2021-08-31 04:42:51.555] Starting pre-session tasks. : (Tue Aug 31 04:42:51 2021)
+MANAGER> PETL_24027 [2021-08-31 04:42:51.556] Pre-session task completed successfully. : (Tue Aug 31 04:42:51 2021)
+DIRECTOR> PETL_24006 [2021-08-31 04:42:51.556] Starting data movement.
+MAPPING> TM_6660 [2021-08-31 04:42:51.557] Total Buffer Pool size is 11280640 bytes and Block size is 624480 bytes.
+READER_1_1_1> DBG_21438 [2021-08-31 04:42:51.558] Reader: Source is [odbc://dbtype=MySQL;host=remotemysql.com;port=3306;database=wOoJkjpNhU], user [wOoJkjpNhU]
+READER_1_1_1> BLKR_16051 [2021-08-31 04:42:51.560] Source database connection [Conn_01ASGZ0B000000000002] code page: [UTF-8 encoding of Unicode]
+READER_1_1_1> CMN_1021 [2021-08-31 04:42:51.560] Database driver event...
+CMN_1021 [Driver Manager used is [UnixODBC 2.3.4].]
+
+READER_1_1_1> CMN_1021 [2021-08-31 04:42:53.002] Database driver event...
+CMN_1021 [ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=MySQL ODBC 8.0 Unicode Driver;Server=remotemysql.com;Database=wOoJkjpNhU;Port=3306;USER=wOoJkjpNhU;NO_SSPS=1;stmt=set time_zone = '+00:00';Charset=UTF8;OPTION=3;SSLMODE=DISABLED]. userid = [wOoJkjpNhU]
+DBMS Name:	MySQL
+DBMS Version:	8.0.13-4
+Driver Name:	libmyodbc8w.so
+Driver Version:	08.00.0012
+MySQL rewrite batch optimization is disabled with maximum bind parameter size set to 2500.]
+
+READER_1_1_1> BLKR_16003 [2021-08-31 04:42:53.002] Initialization completed successfully.
+WRITER_1_*_1> WRT_8147 [2021-08-31 04:42:53.003] Writer: Target is database [odbc://dbtype=MySQL;host=remotemysql.com;port=3306;database=wOoJkjpNhU], user [wOoJkjpNhU], bulk mode [OFF]
+WRITER_1_*_1> CMN_1021 [2021-08-31 04:42:53.004] Database driver event...
+CMN_1021 [Driver Manager used is [UnixODBC 2.3.4].]
+
+WRITER_1_*_1> CMN_1021 [2021-08-31 04:42:54.367] Database driver event...
+CMN_1021 [ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=MySQL ODBC 8.0 Unicode Driver;Server=remotemysql.com;Database=wOoJkjpNhU;Port=3306;USER=wOoJkjpNhU;NO_SSPS=1;stmt=set time_zone = '+00:00';Charset=UTF8;OPTION=3;SSLMODE=DISABLED]. userid = [wOoJkjpNhU]
+DBMS Name:	MySQL
+DBMS Version:	8.0.13-4
+Driver Name:	libmyodbc8w.so
+Driver Version:	08.00.0012
+MySQL rewrite batch optimization is disabled with maximum bind parameter size set to 2500.]
+
+WRITER_1_*_1> WRT_8221 [2021-08-31 04:42:54.670] Target database connection [Conn_01ASGZ0B000000000002] code page: [UTF-8 encoding of Unicode]
+WRITER_1_*_1> WRT_8124 [2021-08-31 04:42:54.671] Target Table Midrange_Phones :SQL INSERT statement:
+INSERT INTO wOoJkjpNhU.Midrange_Phones(Prod_ID,Prod_Name,Prod_Desc,Prod_Price)  VALUES ( ?, ?, ?, ?) 
+WRITER_1_*_1> WRT_8020 [2021-08-31 04:42:54.671] No column marked as primary key for table [Midrange_Phones]. UPDATEs Not Supported.
+WRITER_1_*_1> WRT_8270 [2021-08-31 04:42:54.671] Target connection group #1 consists of target(s) [Midrange_Phones]
+WRITER_1_*_1> WRT_8003 [2021-08-31 04:42:54.671] Writer initialization complete.
+WRITER_1_*_1> WRT_8005 [2021-08-31 04:42:54.672] Writer run started.
+READER_1_1_1> BLKR_16007 [2021-08-31 04:42:54.672] Reader run started.
+WRITER_1_*_1> WRT_8158 [2021-08-31 04:42:54.672] 
+
+*****START LOAD SESSION*****
+
+Load Start Time: Tue Aug 31 04:42:54 2021
+
+Target tables:
+
+     Midrange_Phones
+
+
+READER_1_1_1> RR_4010 [2021-08-31 04:42:54.672] SQ instance [Source] SQL Query [SELECT wOoJkjpNhU.Phones.Prod_ID, wOoJkjpNhU.Phones.Prod_Name, wOoJkjpNhU.Phones.Prod_Desc, wOoJkjpNhU.Phones.Prod_Price FROM wOoJkjpNhU.Phones]
+READER_1_1_1> RR_4049 [2021-08-31 04:42:54.672] SQL Query issued to database : (Tue Aug 31 04:42:54 2021)
+READER_1_1_1> RR_4050 [2021-08-31 04:42:54.833] First row returned from database to reader : (Tue Aug 31 04:42:54 2021)
+READER_1_1_1> BLKR_16019 [2021-08-31 04:42:54.833] Read [100] rows, read [0] error rows for source table [Phones] instance name [Phones]
+READER_1_1_1> BLKR_16008 [2021-08-31 04:42:54.833] Reader run completed.
+TRANSF_1_1_1> DBG_21216 [2021-08-31 04:42:54.833] Finished transformations for Source Qualifier [Source]. Total errors [0] 
+WRITER_1_*_1> WRT_8167 [2021-08-31 04:42:54.833] Start loading table [Midrange_Phones] at: Tue Aug 31 04:42:54 2021
+WRITER_1_*_1> WRT_8168 [2021-08-31 04:42:59.372] End loading table [Midrange_Phones] at: Tue Aug 31 04:42:58 2021
+WRITER_1_*_1> WRT_8141 [2021-08-31 04:42:59.525] 
+Commit on end-of-data  Tue Aug 31 04:42:58 2021
+===================================================
+
+WRT_8036 Target: Midrange_Phones (Instance Name: [Midrange_Phones])
+WRT_8038 Inserted rows - Requested: 30         Applied: 30         Rejected: 0          Affected: 30        
+
+WRITER_1_*_1> WRT_8035 [2021-08-31 04:42:59.525] Load complete time: Tue Aug 31 04:42:58 2021
+
+LOAD SUMMARY
+============
+
+WRT_8036 Target: Midrange_Phones (Instance Name: [Midrange_Phones])
+WRT_8038 Inserted rows - Requested: 30         Applied: 30         Rejected: 0          Affected: 30        
+
+
+WRITER_1_*_1> WRT_8043 [2021-08-31 04:42:59.525] *****END LOAD SESSION*****
+WRITER_1_*_1> WRT_8006 [2021-08-31 04:42:59.679] Writer run completed.
+MANAGER> PETL_24031 [2021-08-31 04:42:59.680] 
+***** RUN INFO FOR TGT LOAD ORDER GROUP [1], CONCURRENT SET [1] *****
+Thread [READER_1_1_1] created for [the read stage] of partition point [Source] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [TRANSF_1_1_1] created for [the transformation stage] of partition point [Source] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [WRITER_1_*_1] created for [the write stage] of partition point [Midrange_Phones] has completed.
+	Total Run Time = [4.845837] secs
+	Total Idle Time = [0.000000] secs
+	Busy Percentage = [100.000000]
+
+MANAGER> PETL_24005 [2021-08-31 04:42:59.681] Starting post-session tasks. : (Tue Aug 31 04:42:59 2021)
+MANAGER> PETL_24029 [2021-08-31 04:42:59.681] Post-session task completed successfully. : (Tue Aug 31 04:42:59 2021)
+MAPPING> TM_6018 [2021-08-31 04:42:59.681] The session completed with [0] row transformation errors. 
+MANAGER> PETL_24002 [2021-08-31 04:43:00.537] Parallel Pipeline Engine finished.
+DIRECTOR> PETL_24012 [2021-08-31 04:43:00.537] Session run completed successfully.
+DIRECTOR> TM_6022 [2021-08-31 04:43:00.537] 
+
+SESSION LOAD SUMMARY
+================================================
+
+DIRECTOR> TM_6252 [2021-08-31 04:43:00.537] Source Load Summary.
+DIRECTOR> CMN_1740 [2021-08-31 04:43:00.537] Table: [Source] (Instance Name: [Source])
+	 Output Rows [100], Affected Rows [100], Applied Rows [100], Rejected Rows [0]
+DIRECTOR> TM_6253 [2021-08-31 04:43:00.537] Target Load Summary.
+DIRECTOR> CMN_1740 [2021-08-31 04:43:00.537] Table: [Midrange_Phones] (Instance Name: [Midrange_Phones])
+	 Output Rows [30], Affected Rows [30], Applied Rows [30], Rejected Rows [0]
+DIRECTOR> TM_6023 [2021-08-31 04:43:00.537] 
+===================================================
+
+DIRECTOR> TM_6020 [2021-08-31 04:43:00.537] Session [s_mtt_01ASGZ0Z000000000003] completed at [Tue Aug 31 04:43:00 2021].
